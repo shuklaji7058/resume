@@ -4,11 +4,6 @@ import Icon, { Icons } from "./Icon";
 const LangGrid: React.FC = () => {
   const languages = [
     {
-      name: "C++",
-      icon: "cpp",
-      color: "#3B82F6", // blue-500
-    },
-    {
       name: "Python",
       icon: "python",
       color: "#F59E0B", // yellow-500
@@ -64,7 +59,6 @@ const LangGrid: React.FC = () => {
       color: "#10B981", // green-500
     },
   ];
-  
 
   return (
     <div>

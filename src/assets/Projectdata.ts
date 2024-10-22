@@ -1,94 +1,99 @@
 const data = {
   projects: [
     {
-      name: "ResearchGpt",
-      description: "Research GPT is an AI-driven tool leveraging the Gemini AI API, offering detailed, elaborated explanations with seamless Supabase authentication and dynamic Framer Motion integration for enhanced user experiences.",
-      github: "https://github.com/karthikeyaspace/research-gpt",
-      techStack: ["TypeScript", "Supabase auth", "Tailwind", "Nodejs", "Gemini API", "Framer Motion"],
-      tryout: "https://researchgptai.vercel.app",
-    }, 
-    {
-        name: "amailer",
-        description: "a npm package build on top of nodemailer, mailgun, sendgrid to send emails easily. It has a user-friendly documentation and is easy to use. It can send emails in bulk mainly used for marketing purposes.",
-        github: "https://github.com/karthikeyaspace/amailer",
-        techStack: ["npm package","Node JS", "Typescript"],
-        tryout: "https://npmjs.com/package/amailer",
+      name: "Paypal-Clone",
+      description:
+        "PayPal Clone is a robust, secure, and scalable financial platform aimed at replicating the core functionalities of the renowned PayPal service.",
+      github: "https://github.com/shuklaji7058/PayPal-clone",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      tryout: "https://pay-pal-clone-ten.vercel.app/",
     },
     {
-      name: "Transferit",
+      name: "ProfileCard",
       description:
-        "Transferit is a file sharing application that allows you to share files securely and anonymously with an option of setting password. It is build using Typescript, Tailwind css, Supabase, AWS S3. It has a user-friendly interface and is easy to use.",
-      github: "https://github.com/karthikeyaspace/transferit",
-      techStack: ["Typescript", "Tailwind css", "Supabase", "AWS S3"],
-      tryout: "https://transferfile.vercel.app",
+        "This is simple profile Card Project.It's my 1st beginner Project.",
+      github: "https://github.com/shuklaji7058/profile_card",
+      techStack: ["HTML", "JavaScript", "CSS"],
+      tryout: "https://profilecardanish.surge.sh/",
     },
     {
-      name: "CodeWatch",
+      name: "Shopping-List",
       description:
-        "A coding platform built to conduct lab exams and coding contests. This app actively monitor tabs while on test and block the student if suspicious activity is detected. Teacher can get live stats of the test.",
-      github: "https://github.com/karthikeyaspace/codewatch",
+        "This project was created to focus on working with the DOM, events, state, local storage and other fundamentals of JavaScript.",
+      github: "https://github.com/shuklaji7058/Shopping-List2",
+      techStack: ["HTML", "JavaScript", "CSS"],
+      tryout: "https://shopping-list-6865a8.netlify.app/",
+    },
+    {
+      name: "Tracalorie",
+      description:
+        "This is the Webpack version of the Tracalorie app from the Modern JS From the Beginning course. It is an app to track calories, meals and workouts.",
+      github: "https://github.com/shuklaji7058/tracalorie-webpack",
+      techStack: ["JavaScript", "npm package", "HTML"],
+      tryout: "https://tracalorie-2.netlify.app/",
+    },
+    {
+      name: "RandomIdeas",
+      description:
+        "This is a fullstack application for sharing random ideas.This app includes a Node.js/Express REST API that uses MongoDB for a database. The client-side is built with Webpack",
+      github: "https://github.com/shuklaji7058/RANDOMIDEAS-API",
       techStack: [
-        "Typescript",
-        "Tailwind css",
-        "Express",
+        "Javascript",
+        "css",
+        "Mongoose",
         "MongoDB",
-        "Judge0 API",
+        "Rest API",
+        "npm package",
+        "NodeJS",
+        "Express",
       ],
+      tryout: "https://randomideas-api-gk4u.onrender.com/",
+    },
+    {
+      name: "Restaurant-shukla's Fusion",
+      description:
+        "This Restaurant Web App using SASS.This is My Part of Learning SASS.",
+      github: "https://github.com/shuklaji7058/SASS-Project-1",
+      techStack: ["CSS", "SASS", "HTML", "Netlify"],
+      tryout: "https://shuklasfusion.netlify.app/",
+    },
+    {
+      name: "Microblog",
+      description:
+        "This Microblog app where we share aur blog's.Build using Python",
+      github: "https://github.com/shuklaji7058/microblog",
+      techStack: ["Python", "JavaScript", "Powershell"],
       tryout: "",
     },
     {
-      name: "Shortifyy",
+      name: "State-Game Quiz",
       description:
-        "Shortifyy is a URL shortening service that helps you to shorten your long URLs and redirects when you visit the short url. It is built using TypeScript, Tailwind CSS, Node JS, and Supabase Postgress db. It has a interactive user-friendly interface and is easy to use.",
-      github: "https://github.com/karthikeyaspace/shortn",
-      techStack: ["TypeScript", "Tailwind css", "Node JS", "Supabase"],
-      tryout: "https://shortifyy.vercel.app",
+        "This is Quiz game of Indian States.In this we have to write correct indian state",
+      github: "https://github.com/shuklaji7058/India-state-game-quiz",
+      techStack: ["Python"],
+      tryout: "",
     },
     {
-      name: "College club website",
+      name: "Pong-Game",
       description:
-        "Designed, Developed and maintaining a website for college club showcasing about the club, events conducted, testimonials, team page etc. current deployed in vercel. Built using React JS, Tailwind CSS",
-      github: "https://github.com/vjdataquesters/website",
-      techStack: ["React JS", "Tailwind CSS", "Vercel"],
-      tryout: "https://vjdataquesters.vercel.app",
+        "The game includes a ball, paddles, and a scoreboard to keep track of points. The project is divided into several modules for better organization and maintainability.",
+      github: "https://github.com/shuklaji7058/Pong-game",
+      techStack: ["Python", "Turtle-Graphics"],
     },
     {
-      name: "The Coder Companion",
+      name: "Turtle-Crossing Game",
       description:
-        "The coder Companion is a next generation coding platform equiped with gemini. It helps user to code efficiently. The AI powered code completion helps user to code faster and helps you to clear your queries.",
-      github: "https://github.com/karthikeyaspace/theCoderCompanion",
-      techStack: ["React JS", "Nodejs", "Express", "CSS", "Gemini API"],
-      tryout: "https://the-coder-companion.vercel.app/",
+        "The game involves a player-controlled turtle attempting to cross a road while avoiding randomly generated cars. As the player progresses, the game difficulty increases with faster-moving cars.",
+      github: "https://github.com/shuklaji7058/Turtle-crossing",
+      techStack: ["Python", "Tkinter", "Turtle-Graphics"],
+      tryout: "",
     },
     {
-      name: "NextPad",
+      name: "CoffeeMachine",
       description:
-        "NextPad is a creative art sharing application built using reactjs, nodejs and mongodb. It allows users to share their creative pieces and lets the viewers write comments. It demonstrates tokenization using jwt for authentication.",
-      github: "https://github.com/karthikeyaspace/NextPad",
-      techStack: ["React JS", "Nodejs", "Express", "MongoDB"]
-    },
-    {
-      name: "FOCUS",
-      description:
-        "Focus is a Python app enhancing focus by blocking distracting websites, automatically closing specified apps, and utilizing the hosts file. Ideal for boosting productivity and parental control by limiting access to unwanted sites and apps.",
-      github: "https://github.com/karthikeyaspace/FOCUS.git",
+        "In this project i use Object Oriented Programming For Code encapsulating and easy to read.",
+      github: "https://github.com/shuklaji7058/OOP-CoffeeMachine",
       techStack: ["Python", "Tkinter"],
-      tryout: "",
-    },
-    {
-      name: "Crypt0-Know",
-      description:
-        "Crypt0-Know is a simple web application that helps you to know the current price of the cryptocurrencies. It uses the CoinGecko API to fetch the current price of the cryptocurrencies. It has a user-friendly interface and is easy to use.",
-      github: "https://github.com/karthikeyaspace/Crypto-React-App.git",
-      techStack: ["React JS", "CoinGecko API", "CSS", "JavaScript"],
-      tryout: "",
-    },
-    {
-      name: "SurfSafe",
-      description:
-        "SurfSafe, a Python app, enhances internet safety by automatically blocking malicious websites, safeguarding against phishing and cyber threats. It leverages the hosts file and HTTPS verification to ensure protection, doubling as parental control for blocking undesirable sites.",
-      github: "https://github.com/karthikeyaspace/SurfSafe.git",
-      techStack: ["Python", "Tkinter", "Hosts File"],
       tryout: "",
     },
   ],

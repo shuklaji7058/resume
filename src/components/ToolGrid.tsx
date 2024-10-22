@@ -9,20 +9,11 @@ const TechGrid: React.FC = () => {
       color: "#007ACC", // blue-500
     },
     {
-      name: "GCP",
-      icon: "gcp",
-      color: "#F9AB00", // yellow-500
-    },
-    {
       name: "Canva",
       icon: "canva",
       color: "#006CFF", // blue-600
     },
-    {
-      name: "Discord",
-      icon: "discord",
-      color: "#5865F2", // blue-500
-    },
+
     {
       name: "Vercel",
       icon: "vercel",
@@ -38,20 +29,11 @@ const TechGrid: React.FC = () => {
       icon: "github",
       color: "#000000", // black
     },
-    {
-      name: "Firebase",
-      icon: "firebase",
-      color: "#de3308", // yellow-500
-    },
+
     {
       name: "Framer",
       icon: "framer",
       color: "#000000", // blue-600
-    },
-    {
-      name: "Supabase",
-      icon: "supabase",
-      color: "#3ECF8E", // green-600
     },
   ];
 
