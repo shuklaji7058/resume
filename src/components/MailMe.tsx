@@ -18,7 +18,7 @@ const MailMe: React.FC<{ theme: string }> = ({ theme }) => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const posturl = "https://kv3b.vercel.app/kv3/mailme";
+    const posturl = "https://shuklaanish040@gmail.com";
     setLoading(true);
     axios
       .post(posturl, mail)
