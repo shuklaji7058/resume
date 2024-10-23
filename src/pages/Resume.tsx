@@ -1,39 +1,41 @@
-import React, { useState, useEffect } from "react";
-import pdf from "../assets/resume.pdf";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();
+import React, { useEffect, useState } from "react";
+import img from "../assets/resume.jpeg";
 
 const Resume: React.FC = () => {
-  const [scale, setScale] = useState(1.5);
+  const [imageWidth, setImageWidth] = useState("80%");
 
   useEffect(() => {
-    const updateScale = () => {
+    const updateWidth = () => {
       const width = window.innerWidth;
       if (width < 600) {
-        setScale(0.6);
+        setImageWidth("90%"); // Mobile view
       } else if (width < 1000) {
-        setScale(1);
+        setImageWidth("70%"); // Tablet view
       } else {
-        setScale(1.5);
+        setImageWidth("50%"); // Desktop view
       }
     };
-    updateScale();
-    window.addEventListener("resize", updateScale);
-    return () => window.removeEventListener("resize", updateScale);
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    return () => window.removeEventListener("resize", updateWidth);
   }, []);
 
   return (
-    <div className="mt-10 md:pt-10 md:mt-6 bg-primary  min-h-screen">
-      <Document file={pdf} className="pdf flex justify-center">
-        <Page pageNumber={1} scale={scale} />
-      </Document>
+    <div className="mt-10 md:pt-10 md:mt-6 bg-primary min-h-screen">
+      <div className="flex justify-center">
+        {/* Render the image with dynamic width based on screen size */}
+        <img
+          src={img}
+          alt="Resume"
+          style={{
+            width: imageWidth, // Dynamically set width
+            maxWidth: "100%", // Ensure it doesn't overflow
+            height: "auto", // Maintain aspect ratio
+          }}
+        />
+      </div>
       <div className="text-center mt-6 sm:mt-0">
-        <a href={pdf} download>
+        <a href={img} download>
           <button className="px-2 py-1 my-10 bg-primary text-xs text-secondary/80 border border-secondary/30">
             Download Resume
           </button>

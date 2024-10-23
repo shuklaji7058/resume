@@ -1,105 +1,73 @@
-import axios from "axios";
-import React, { useState } from "react";
-import Icon from "./Icon";
+import { Mail, MapPin, Phone } from "lucide-react";
 
-interface Mail {
-  name: string;
-  email: string;
-  message: string;
-}
-
-const MailMe: React.FC<{ theme: string }> = ({ theme }) => {
-  const [mail, setMail] = useState<Mail>({ name: "", email: "", message: "" });
-  const [loading, setLoading] = useState<boolean>(false);
-  const [stats, setStats] = useState<{ message: string; type: string }>({
-    message: "",
-    type: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const posturl = "https://shuklaanish040@gmail.com";
-    setLoading(true);
-    axios
-      .post(posturl, mail)
-      .then((res) => {
-        console.log(res.data);
-        if (res.data.message === "Mail received") {
-          setMail({ name: "", email: "", message: "" });
-          setStats({ message: "Mail sent successfully", type: "success" });
-        } else {
-          setStats({ message: "Mail sending failed", type: "error" });
-        }
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+const ContactPage = () => {
   return (
-    <div>
-      <div className="flex flex-col items-start mb-4 gap-1">
-        <h1 className="text-3xl">Contact Me</h1>
-        <p className="italic font-thin opacity-30 text-sm">send me an email </p>
-        <div className="w-full h-[1px] bg-secondary/20"></div>
-      </div>
-
-      <form
-        onSubmit={handleSubmit}
-        className="w-full sm:w-10/12 flex flex-col gap-2 mx-auto "
-      >
-        <p
-          className={`text-left text-sm italic  ${
-            stats.type === "success" ? "text-green-700" : "text-red-600"
-          }`}
-        >
-          {stats.message ? stats.message : <>&nbsp;</>}
-        </p>
-
-        <div className="w-full flex justify-center items-center flex-wrap gap-3">
-          <input
-            type="text"
-            placeholder="Name"
-            value={mail.name}
-            className="flex-1 p-3 bg-transparent border-2 border-secondary/40 focus:border-secondary focus:border-2 focus:outline-none rounded-sm  "
-            required
-            onChange={(e) => setMail({ ...mail, name: e.target.value })}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            value={mail.email}
-            className="flex-1 p-3 bg-transparent border-2 border-secondary/40 focus:border-secondary focus:border-2 focus:outline-none rounded-sm "
-            required
-            onChange={(e) => setMail({ ...mail, email: e.target.value })}
-          />
+    <div className="min-h-screen bg-black text-white p-10 md:p-8">
+      <div className="max-w-4xl mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 hover:text-gray-300 transition-colors">
+            Contact Me
+          </h1>
         </div>
-        <textarea
-          placeholder="Message"
-          value={mail.message}
-          required
-          className="w-full h-40 p-4 mt-2 bg-transparent border-2 border-secondary/40 focus:border-secondary focus:border-2 focus:outline-none rounded-sm "
-          onChange={(e) => setMail({ ...mail, message: e.target.value })}
-        />
-        <button
-          type="submit"
-          className="w-40 h-10 sm:w-40 mx-auto mt-4 py-3 border border-secondary text-secondary flex justify-center items-center"
-          disabled={loading}
-        >
-          {loading ? (
-            <Icon
-              icon="tailspin"
-              className="animate-spin"
-              fill={theme === "dark" ? "white" : "black"}
-              size={20}
-            />
-          ) : (
-            "Send"
-          )}
-        </button>
-      </form>
+
+        {/* Contact Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {/* Phone Card */}
+          <div className="bg-gray-900 p-6 md:p-8 rounded-xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="bg-blue-500/10 p-3 md:p-4 rounded-full">
+                <Phone className="h-6 w-6 md:h-8 md:w-8 text-blue-400" />
+              </div>
+              <h2 className="text-lg md:text-xl font-semibold">Phone</h2>
+
+              <p className="text-blue-400 text-base md:text-lg break-words w-full">
+                +91 7058601500
+              </p>
+            </div>
+          </div>
+
+          {/* Email Card */}
+          <div className="bg-gray-900 p-6 md:p-8 rounded-xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="bg-blue-500/10 p-3 md:p-4 rounded-full">
+                <Mail className="h-6 w-6 md:h-8 md:w-8 text-blue-400" />
+              </div>
+              <h2 className="text-lg md:text-xl font-semibold">Email</h2>
+
+              <a
+                href="mailto:contact@example.com"
+                className="text-blue-400 hover:text-blue-300 transition-colors text-base md:text-lg break-words w-full"
+              >
+                shuklaanish040@gmail.com
+              </a>
+            </div>
+          </div>
+
+          {/* Address Card */}
+          <div className="bg-gray-900 p-6 md:p-8 rounded-xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="bg-blue-500/10 p-3 md:p-4 rounded-full">
+                <MapPin className="h-6 w-6 md:h-8 md:w-8 text-blue-400" />
+              </div>
+              <h2 className="text-lg md:text-xl font-semibold">Address</h2>
+
+              <p className="text-blue-400 text-base md:text-lg break-words w-full">
+                Pimpri-Chinchwad,Pune
+                <br />
+                India,411033
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Section */}
+        <div className="text-center mt-12 md:mt-16 text-gray-400">
+          <p>Copyright© 2024 Anish Shuka</p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default MailMe;
+export default ContactPage;

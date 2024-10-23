@@ -1,13 +1,13 @@
 import React from "react";
-import Landing from "../components/Landing";
+import { useOutletContext } from "react-router-dom";
 import About from "../components/About";
+import Github from "../components/Github";
+import Landing from "../components/Landing";
+import MailMe from "../components/MailMe";
+import Projects2 from "../components/Projects2";
+import Reveal from "../components/Reveal";
 import TechGrid from "../components/TechGrid";
 import ToolGrid from "../components/ToolGrid";
-import Github from "../components/Github";
-import { useOutletContext } from "react-router-dom";
-import Projects2 from "../components/Projects2";
-import MailMe from "../components/MailMe";
-import Reveal from "../components/Reveal";
 
 const Home: React.FC = () => {
   const { theme } = useOutletContext<{ theme: string }>();
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
         <Github theme={theme} />
       </Reveal>
       <Reveal>
-        <MailMe theme={theme}/>
+        <MailMe />
       </Reveal>
     </div>
   );
