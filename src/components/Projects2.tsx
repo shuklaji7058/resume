@@ -1,6 +1,6 @@
 import React from "react";
-import data from "../assets/Projectdata";
 import { Link } from "react-router-dom";
+import data from "../assets/Projectdata";
 
 const Projects2: React.FC = () => {
   const homedata = Array.isArray(data.projects)
