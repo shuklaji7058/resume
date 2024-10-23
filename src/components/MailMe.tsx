@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Mail, MapPin, Phone } from "lucide-react";
 
 const ContactPage = () => {

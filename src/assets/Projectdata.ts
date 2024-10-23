@@ -9,6 +9,14 @@ const data = {
       tryout: "https://pay-pal-clone-ten.vercel.app/",
     },
     {
+      name: "Tracalorie",
+      description:
+        "This is the Webpack version of the Tracalorie app from the Modern JS From the Beginning course. It is an app to track calories, meals and workouts.",
+      github: "https://github.com/shuklaji7058/tracalorie-webpack",
+      techStack: ["JavaScript", "npm package", "HTML"],
+      tryout: "https://tracalorie-2.netlify.app/",
+    },
+    {
       name: "ProfileCard",
       description:
         "This is simple profile Card Project.It's my 1st beginner Project.",
@@ -24,14 +32,7 @@ const data = {
       techStack: ["HTML", "JavaScript", "CSS"],
       tryout: "https://shopping-list-6865a8.netlify.app/",
     },
-    {
-      name: "Tracalorie",
-      description:
-        "This is the Webpack version of the Tracalorie app from the Modern JS From the Beginning course. It is an app to track calories, meals and workouts.",
-      github: "https://github.com/shuklaji7058/tracalorie-webpack",
-      techStack: ["JavaScript", "npm package", "HTML"],
-      tryout: "https://tracalorie-2.netlify.app/",
-    },
+
     {
       name: "RandomIdeas",
       description:
