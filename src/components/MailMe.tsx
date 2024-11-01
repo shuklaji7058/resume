@@ -64,7 +64,7 @@ const ContactPage = () => {
 
         {/* Footer Section */}
         <div className="text-center mt-12 md:mt-16 text-gray-400">
-          <p>Copyright© 2024 Anish Shuka</p>
+          <p>Copyright© 2024 Anish Shukla</p>
         </div>
       </div>
     </div>
