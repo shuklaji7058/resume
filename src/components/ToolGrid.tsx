@@ -31,7 +31,7 @@ const TechGrid: React.FC = () => {
     },
 
     {
-      name: "Framer",
+      name: "Framer Motion",
       icon: "framer",
       color: "#000000", // blue-600
     },
