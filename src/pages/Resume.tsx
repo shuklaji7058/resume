@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import img from "../assets/resume.jpeg";
+import img1 from "../assets/resume1.jpg";
+import img2 from "../assets/resume2.jpg";
 
 const Resume: React.FC = () => {
   const [imageWidth, setImageWidth] = useState("80%");
@@ -25,7 +26,16 @@ const Resume: React.FC = () => {
       <div className="flex justify-center">
         {/* Render the image with dynamic width based on screen size */}
         <img
-          src={img}
+          src={img1}
+          alt="Resume"
+          style={{
+            width: imageWidth, // Dynamically set width
+            maxWidth: "100%", // Ensure it doesn't overflow
+            height: "auto", // Maintain aspect ratio
+          }}
+        />
+        <img
+          src={img2}
           alt="Resume"
           style={{
             width: imageWidth, // Dynamically set width
@@ -35,7 +45,12 @@ const Resume: React.FC = () => {
         />
       </div>
       <div className="text-center mt-6 sm:mt-0">
-        <a href={img} download>
+        <a href={img1} download>
+          <button className="px-2 py-1 my-10 bg-primary text-xs text-secondary/80 border border-secondary/30">
+            Download Resume
+          </button>
+        </a>
+        <a href={img2} download>
           <button className="px-2 py-1 my-10 bg-primary text-xs text-secondary/80 border border-secondary/30">
             Download Resume
           </button>
