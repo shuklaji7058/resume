@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import resume1 from "../assets/resume1.jpg";
-import resume2 from "../assets/resume2.jpg"; // Add your second image
+import resume1 from "../assets/resume1.jpeg";
+import resume2 from "../assets/resume2.jpeg"; // Add your second image
 
 const Resume: React.FC = () => {
   const [imageWidth, setImageWidth] = useState("80%");
@@ -30,9 +30,9 @@ const Resume: React.FC = () => {
 
     // Set download attributes
     link1.href = resume1;
-    link1.download = "resume1.jpg";
+    link1.download = "resume1.jpeg";
     link2.href = resume2;
-    link2.download = "resume2.jpg";
+    link2.download = "resume2.jpeg";
 
     // Trigger downloads
     link1.click();
