@@ -9,12 +9,16 @@ const About: React.FC = () => {
       </div>
       <div className="space-y-2 text-secondary/80">
         <p className="text-md">
-          A 3rd-year Computer Science student from Pune, India, with a passion
-          for FrontEnd development and Artificial Intelligence. I love to build
-          things in public and write clean code. I Learn new tech by building
-          projects with it. Constantly seeking new opportunities to learn and
-          grow, I thrive in collaborative work and team environments. Beyond
-          tech, I enjoy playing cricket, and watching movies.
+          Results-driven Computer Science graduate from Pratibha College of
+          Commerce & Computer Studies (SPPU) with strong expertise in Python and
+          web development (HTML, CSS, JavaScript, React). Demonstrated practical
+          experience through development of multiple projects, including an
+          AI-powered Pratibha Wizardry app and advanced chat applications.
+          Proficient in integrating AI technologies to create innovative
+          solutions. Known for quick learning ability, clean coding practices,
+          and effective teamwork. Seeking a Software Developer role to
+          contribute technical expertise while continuously growing
+          professionally and driving innovation.
         </p>
       </div>
     </div>
