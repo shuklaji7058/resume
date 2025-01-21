@@ -18,16 +18,18 @@ const Landing: React.FC<{ theme: string }> = ({ theme }) => {
         <h1 className="text-3xl md:text-4xl font-bold z-10">Hey,</h1>
         <h1 className="text-3xl md:text-6xl z-10">
           I am
-          <span className="text-5xl md:text-7xl font-extrabold">Anish</span>
+          <span className="text-5xl md:text-7xl font-extrabold">
+            Anish Shukla
+          </span>
         </h1>
         <div className="flex flex-row flex-wrap gap-4 z-10">
           <TypeAnimation
             sequence={[
               "CS Student",
               2000,
-              "Full Stack Developer",
+              "Frontend Developer",
               2000,
-              "ML Enthusiast",
+              "Python Developer",
               2000,
             ]}
             wrapper="span"

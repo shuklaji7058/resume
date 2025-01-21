@@ -3,11 +3,8 @@ import GitHubCalendar from "react-github-calendar";
 
 const Github: React.FC<{ theme: string }> = ({ theme }) => {
   return (
-    <div>
-      <div className="flex flex-col mb-4 gap-2">
-        <h1 className="text-3xl">Github Stats</h1>
-        <div className="w-full h-[1px] bg-secondary/20"></div>
-      </div>
+    <div className="w-full flex flex-col items-center gap-6">
+      <div className="text-center text-2xl font-bold">GitHub Contributions</div>
       <div className="flex justify-center opacity-80 pb-8 w-full">
         <GitHubCalendar
           username="shuklaji7058"
@@ -18,6 +15,14 @@ const Github: React.FC<{ theme: string }> = ({ theme }) => {
           fontSize={10}
         />
       </div>
+      <a
+        href="https://github.com/shuklaji7058"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-6 py-2 border border-secondary/30 hover:bg-secondary/10 transition-colors duration-300 rounded-md"
+      >
+        View GitHub Profile
+      </a>
     </div>
   );
 };

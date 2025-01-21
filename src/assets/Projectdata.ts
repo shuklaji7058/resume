@@ -9,6 +9,21 @@ const data = {
       tryout: "https://pay-pal-clone-ten.vercel.app/",
     },
     {
+      name: "Profile-Explorer",
+      description:
+        "A dynamic web application for managing and viewing professional profiles.Features interactive maps showing profile locations using Leaflet integration",
+      github: "https://github.com/shuklaji7058/profile-explorer",
+      techStack: [
+        "React",
+        "TailwindCSS",
+        "Vite",
+        "PostCSS",
+        "Leaflet (for maps)",
+        " React Router DOM",
+      ],
+      tryout: "https://profile-explorer-rho.vercel.app/",
+    },
+    {
       name: "Tracalorie",
       description:
         "This is the Webpack version of the Tracalorie app from the Modern JS From the Beginning course. It is an app to track calories, meals and workouts.",

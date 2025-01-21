@@ -35,6 +35,11 @@ const TechGrid: React.FC = () => {
       icon: "framer",
       color: "#000000", // blue-600
     },
+    {
+      name: "Overleaf",
+      icon: "overleaf",
+      color: "#47A141", // blue-600
+    },
   ];
 
   return (

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Icon from "./Icon";
 
 const Landing: React.FC<{ theme: string }> = ({ theme }) => {
-  const roles = ["CS Student", "FrontEnd Dev", "GenAI Enthusiast"];
+  const roles = ["CS Student", "FrontEnd Developer", "Python Developer"];
   const q = ["Build", "Ship", "Innovate"];
   const [i, setI] = useState(0);
   const iconfill = theme === "dark" ? "white" : "black";
@@ -106,7 +106,7 @@ const Landing: React.FC<{ theme: string }> = ({ theme }) => {
             <Icon icon="github" size={32} fill={iconfill} />
           </a>
           <a
-            href="linkedin.com/in/anish-shukla-07633b2bb"
+            href="http://linkedin.com/in/anish-shukla-07633b2bb"
             target="_blank"
             rel="noopener noreferrer"
             className="transform hover:scale-110 transition-transform duration-200"

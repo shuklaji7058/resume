@@ -27,7 +27,8 @@ export type Icons =
   | "firebase"
   | "rightuparrow"
   | "projgithub"
-  | "tailspin";
+  | "tailspin"
+  | "overleaf";
 
 interface IconProps {
   icon: Icons;

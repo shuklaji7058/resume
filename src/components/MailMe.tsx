@@ -1,74 +1,70 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { Mail, MapPin, Phone } from "lucide-react";
+import React from "react";
 
-const ContactPage = () => {
+const MailMe: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black text-white p-10 md:p-8">
-      <div className="max-w-4xl mx-auto">
-        {/* Header Section */}
-        <div className="text-center mb-12 md:mb-16 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 hover:text-gray-300 transition-colors">
-            Contact Me
-          </h1>
+    <div className="w-full">
+      {/* Header */}
+      <div className="flex flex-col mb-6 gap-2">
+        <h1 className="text-3xl">Contact Me</h1>
+        <div className="w-full h-[1px] bg-secondary/20"></div>
+      </div>
+
+      {/* Contact Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        {/* Phone Card */}
+        <div className="border border-secondary/30 p-4 md:p-6 rounded-lg bg-primary hover:bg-secondary/5 transition-colors duration-300">
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="p-2 md:p-3 rounded-full border border-secondary/20">
+              <Phone className="h-5 w-5 md:h-6 md:w-6 text-secondary" />
+            </div>
+            <h2 className="text-base md:text-lg font-medium">Phone</h2>
+            <p className="text-sm md:text-base text-secondary/80 break-all">
+              +91 7058601500
+            </p>
+          </div>
         </div>
 
-        {/* Contact Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {/* Phone Card */}
-          <div className="bg-gray-900 p-6 md:p-8 rounded-xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="bg-blue-500/10 p-3 md:p-4 rounded-full">
-                <Phone className="h-6 w-6 md:h-8 md:w-8 text-blue-400" />
-              </div>
-              <h2 className="text-lg md:text-xl font-semibold">Phone</h2>
-
-              <p className="text-blue-400 text-base md:text-lg break-words w-full">
-                +91 7058601500
-              </p>
+        {/* Email Card */}
+        <div className="border border-secondary/30 p-4 md:p-6 rounded-lg bg-primary hover:bg-secondary/5 transition-colors duration-300">
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="p-2 md:p-3 rounded-full border border-secondary/20">
+              <Mail className="h-5 w-5 md:h-6 md:w-6 text-secondary" />
             </div>
+            <h2 className="text-base md:text-lg font-medium">Email</h2>
+            <a
+              href="mailto:shuklaanish040@gmail.com"
+              className="text-sm md:text-base text-secondary/80 hover:text-secondary transition-colors break-all"
+            >
+              shuklaanish040@gmail.com
+            </a>
           </div>
+        </div>
 
-          {/* Email Card */}
-          <div className="bg-gray-900 p-6 md:p-8 rounded-xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="bg-blue-500/10 p-3 md:p-4 rounded-full">
-                <Mail className="h-6 w-6 md:h-8 md:w-8 text-blue-400" />
-              </div>
-              <h2 className="text-lg md:text-xl font-semibold">Email</h2>
-
-              <a
-                href="mailto:contact@example.com"
-                className="text-blue-400 hover:text-blue-300 transition-colors text-base md:text-lg break-words w-full"
-              >
-                shuklaanish040@gmail.com
-              </a>
+        {/* Location Card */}
+        <div className="border border-secondary/30 p-4 md:p-6 rounded-lg bg-primary hover:bg-secondary/5 transition-colors duration-300">
+          <div className="flex flex-col items-center text-center space-y-3">
+            <div className="p-2 md:p-3 rounded-full border border-secondary/20">
+              <MapPin className="h-5 w-5 md:h-6 md:w-6 text-secondary" />
             </div>
-          </div>
-
-          {/* Address Card */}
-          <div className="bg-gray-900 p-6 md:p-8 rounded-xl hover:transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="bg-blue-500/10 p-3 md:p-4 rounded-full">
-                <MapPin className="h-6 w-6 md:h-8 md:w-8 text-blue-400" />
-              </div>
-              <h2 className="text-lg md:text-xl font-semibold">Address</h2>
-
-              <p className="text-blue-400 text-base md:text-lg break-words w-full">
-                Pimpri-Chinchwad,Pune
+            <h2 className="text-base md:text-lg font-medium">Location</h2>
+            <div className="text-sm md:text-base text-secondary/80">
+              <p className="break-words">
+                Pimpri-Chinchwad, Pune
                 <br />
-                India,411033
+                India, 411033
               </p>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Footer Section */}
-        <div className="text-center mt-12 md:mt-16 text-gray-400">
-          <p>Copyright© 2024 Anish Shukla</p>
-        </div>
+      {/* Footer */}
+      <div className="text-center mt-8 md:mt-10 text-secondary/60 text-xs md:text-sm">
+        Copyright© 2024 Anish Shukla
       </div>
     </div>
   );
 };
 
-export default ContactPage;
+export default MailMe;
