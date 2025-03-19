@@ -1,6 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import Certificates from "./components/certificates";
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -23,6 +24,10 @@ const App: React.FC = () => {
         {
           path: "/resume",
           element: <Resume />,
+        },
+        {
+          path: "/certificates",
+          element: <Certificates />,
         },
       ],
     },

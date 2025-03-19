@@ -69,6 +69,10 @@ export const svgicons = (fill?: string) => ({
   <path d="M12.5,4.6c0.2,0,0.4,0.1,0.6,0.2c0.3,0.2,0.5,0.6,0.5,1v2.1H12V5.8c0-0.4,0.2-0.8,0.5-1C12.1,4.7,12.3,4.6,12.5,4.6z"/>
 </svg>`,
 
+  certificate: `<svg stroke="currentColor" fill="${fill}" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L8 8L2 9.5L7 14.5L5.5 21L12 17.5L18.5 21L17 14.5L22 9.5L16 8L12 2ZM12 5.7L14.6 9.9L19 10.9L15.5 14.3L16.6 18.7L12 16.3L7.4 18.7L8.5 14.3L5 10.9L9.4 9.9L12 5.7Z"/>
+  </svg>`,
+
   tailspin: `<svg fill="" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">

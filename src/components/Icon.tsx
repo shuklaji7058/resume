@@ -28,7 +28,8 @@ export type Icons =
   | "rightuparrow"
   | "projgithub"
   | "tailspin"
-  | "overleaf";
+  | "overleaf"
+  | "certificate";
 
 interface IconProps {
   icon: Icons;

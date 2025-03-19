@@ -34,6 +34,12 @@ const Navbar: React.FC<{
       logo: "resume",
       size: 18,
     },
+    {
+      name: "Certificates",
+      link: "/certificates",
+      logo: "certificate",
+      size: 18,
+    },
   ];
 
   const handleTheme = () => {
@@ -41,9 +47,10 @@ const Navbar: React.FC<{
   };
 
   return (
-    <nav className="z-20 h-20 w-screen fixed top-0 text-secondary ">
-      <div className="hidden md:flex h-full backdrop-blur-sm  justify-center items-center">
-        <div className="flex items-center text-md rounded-full border border-secondary/30 bg-primary">
+    <nav className="z-20 h-20 w-screen fixed top-0 text-secondary">
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex h-full backdrop-blur-sm justify-center items-center">
+        <div className="flex items-center text-md rounded-full border border-secondary/28 bg-primary">
           {navelements.map((element) => {
             const active =
               path === element.link ? "text-pink-600" : "text-secondary";
@@ -51,33 +58,33 @@ const Navbar: React.FC<{
               <Link
                 to={element.link}
                 key={element.name}
-                className={`w-28 p-1 rounded-full hover:text-pink-500 text-center  ${active}`}
+                className={`w-28 p- rounded-full hover:text-pink-500 text-center ${active}`}
               >
                 {element.name}
               </Link>
             );
           })}
-          <div onClick={handleTheme} className="cursor-pointer pr-2 pl-1 ">
+          <button
+            onClick={handleTheme}
+            className="w-27 p-3 rounded-full hover:text-pink-500 text-center"
+          >
             {theme === "dark" ? (
-              <Icon icon="lightmode" fill="white" size={20} />
+              <Icon icon="lightmode" size={22} />
             ) : (
-              <Icon icon="darkmode" fill="black" size={20} />
+              <Icon icon="darkmode" size={22} />
             )}
-          </div>
+          </button>
         </div>
       </div>
 
-      <div className="fixed bottom-3 left-0 right-0 w-full md:hidden z-20 ">
-        <div className="h-full w-64 flex mx-auto rounded-full backdrop-blur-lg bg-secondary/10 items-center">
+      {/* Mobile Navigation */}
+      <div className="md:hidden fixed bottom-6 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="flex items-center gap-3 px-4 py-2 rounded-full backdrop-blur-lg bg-secondary/10 border border-secondary/30">
           {navelements.map((element) => {
             const active =
               path === element.link ? "#db2777" : darkTheme ? "white" : "black";
             return (
-              <Link
-                to={element.link}
-                key={element.name}
-                className="px-6 py-3 duration-150"
-              >
+              <Link to={element.link} key={element.name} className="p-2">
                 <Icon
                   icon={element.logo as Icons}
                   size={element.size}
@@ -86,13 +93,17 @@ const Navbar: React.FC<{
               </Link>
             );
           })}
-          <div onClick={handleTheme} className="cursor-pointer px-6">
+          <button
+            onClick={handleTheme}
+            className="p-2"
+            aria-label="Toggle theme"
+          >
             {theme === "dark" ? (
-              <Icon icon="lightmode" size={28} fill="white" />
+              <Icon icon="lightmode" size={22} fill="white" />
             ) : (
-              <Icon icon="darkmode" size={28} fill="black" />
+              <Icon icon="darkmode" size={22} fill="black" />
             )}
-          </div>
+          </button>
         </div>
       </div>
     </nav>
