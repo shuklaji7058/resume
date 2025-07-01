@@ -9,24 +9,15 @@ const About: React.FC = () => {
       </div>
       <div className="space-y-4 text-secondary/80">
         <p className="text-md leading-relaxed">
-          Results-driven Computer Science graduate from Pratibha College of
-          Commerce & Computer Studies (SPPU) with strong knowledge in Python and
-          web development (HTML, CSS, JavaScript, React). Demonstrated practical
-          experience through development of multiple projects, including an
-          AI-powered Pratibha Wizardry app and advanced chat applications.
-        </p>
-        <p className="text-md leading-relaxed">
-          Working knowledge of database management with practical experience in
-          SQL, enabling me to perform basic database operations and write
-          fundamental queries. Currently expanding my database skills while
-          building projects that require data persistence and management.
-        </p>
-        <p className="text-md leading-relaxed">
-          Proficient in integrating AI technologies to create innovative
-          solutions while maintaining clean code practices. Known for quick
-          learning ability and effective collaboration in team environments.
-          Seeking a Software Developer role to leverage my technical expertise
-          while continuously growing professionally and expanding my skill set.
+          I am a Computer Science undergraduate with a strong foundation in
+          Python, SQL (MySQL & PostgreSQL), and front-end web development,
+          including HTML, CSS, and JavaScript. I am passionate about software
+          development and eager to contribute to impactful tech projects by
+          writing clean, efficient code. I also have knowledge of Generative AI,
+          which adds to my ability to work on modern, innovative solutions. I am
+          actively seeking an entry-level opportunity in Python development, web
+          development, or any tech role where I can grow, learn, and bring value
+          to the team.
         </p>
       </div>
     </div>

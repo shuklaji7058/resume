@@ -1,14 +1,6 @@
 const data = {
   projects: [
     {
-      name: "Paypal-Clone",
-      description:
-        "PayPal Clone is a robust, secure, and scalable financial platform aimed at replicating the core functionalities of the renowned PayPal service.",
-      github: "https://github.com/shuklaji7058/PayPal-clone",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      tryout: "https://pay-pal-clone-ten.vercel.app/",
-    },
-    {
       name: "Profile-Explorer",
       description:
         "A dynamic web application for managing and viewing professional profiles.Features interactive maps showing profile locations using Leaflet integration",
@@ -22,6 +14,14 @@ const data = {
         " React Router DOM",
       ],
       tryout: "https://profile-explorer-rho.vercel.app/",
+    },
+    {
+      name: "Microblog",
+      description:
+        "This Microblog app where we share aur blog's.Build using Python",
+      github: "https://github.com/shuklaji7058/microblog",
+      techStack: ["Python", "JavaScript", "Powershell"],
+      tryout: "",
     },
     {
       name: "Tracalorie",
@@ -47,7 +47,14 @@ const data = {
       techStack: ["HTML", "JavaScript", "CSS"],
       tryout: "https://shopping-list-6865a8.netlify.app/",
     },
-
+    {
+      name: "Paypal-Clone",
+      description:
+        "PayPal Clone is a robust, secure, and scalable financial platform aimed at replicating the core functionalities of the renowned PayPal service.",
+      github: "https://github.com/shuklaji7058/PayPal-clone",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      tryout: "https://pay-pal-clone-ten.vercel.app/",
+    },
     {
       name: "RandomIdeas",
       description:
@@ -73,14 +80,7 @@ const data = {
       techStack: ["CSS", "SASS", "HTML", "Netlify"],
       tryout: "https://shuklasfusion.netlify.app/",
     },
-    {
-      name: "Microblog",
-      description:
-        "This Microblog app where we share aur blog's.Build using Python",
-      github: "https://github.com/shuklaji7058/microblog",
-      techStack: ["Python", "JavaScript", "Powershell"],
-      tryout: "",
-    },
+
     {
       name: "State-Game Quiz",
       description:

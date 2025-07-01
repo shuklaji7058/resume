@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Icon from "./Icon";
 
 const Landing: React.FC<{ theme: string }> = ({ theme }) => {
-  const roles = ["CS Student", "FrontEnd Developer", "Python Developer"];
+  const roles = ["Web Developer", "FrontEnd Developer", "Python Developer"];
   const q = ["Build", "Ship", "Innovate"];
   const [i, setI] = useState(0);
   const iconfill = theme === "dark" ? "white" : "black";
@@ -41,9 +41,12 @@ const Landing: React.FC<{ theme: string }> = ({ theme }) => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          Hey, I&apos;m{" "}
-          <span className="text-6xl md:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-            Anish
+          नमस्ते👋, I&apos;m{" "}
+          <span className="relative inline-block">
+            <span className="text-6xl md:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+              Anish
+            </span>
+            <span className="absolute left-0 right-0 -bottom-2 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></span>
           </span>
         </motion.h1>
 

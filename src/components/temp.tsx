@@ -15,7 +15,12 @@ const Landing: React.FC<{ theme: string }> = ({ theme }) => {
   return (
     <div className="w-full mb-72 lg:mb-80">
       <div className="flex flex-col mt-12 md:mt-24">
-        <h1 className="text-3xl md:text-4xl font-bold z-10">Hey,</h1>
+        <h1
+          className="text-3xl md:text-4xl font-bold z-10"
+          style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}
+        >
+          नमस्ते👋,
+        </h1>{" "}
         <h1 className="text-3xl md:text-6xl z-10">
           I am
           <span className="text-5xl md:text-7xl font-extrabold">
@@ -25,7 +30,7 @@ const Landing: React.FC<{ theme: string }> = ({ theme }) => {
         <div className="flex flex-row flex-wrap gap-4 z-10">
           <TypeAnimation
             sequence={[
-              "CS Student",
+              "Web Developer",
               2000,
               "Frontend Developer",
               2000,
@@ -51,11 +56,9 @@ const Landing: React.FC<{ theme: string }> = ({ theme }) => {
             THINGS
           </span>
         </h1>
-
         <Link to="projects" className="z-10 mt-3">
           <p className="italic text-pink-500 "></p>
         </Link>
-
         <div className="flex flex-row gap-5 mt-6 z-10">
           <a
             href="https://github.com/shuklaji7058"

@@ -11,7 +11,7 @@ export const certificates: Certificate[] = [
     issuer: "Udemy",
   },
   {
-    title: "Web Development Certificate",
+    title: "Gen-AI Certificate",
     image: "/public/certificates/gen-ai.jpg",
     issuer: "Udemy",
   },
@@ -21,7 +21,7 @@ export const certificates: Certificate[] = [
     issuer: "Complete Coding",
   },
   {
-    title: "Web Development Certificate",
+    title: "Shopify-theme Development Certificate",
     image: "/public/certificates/shopify-theme-dev.jpg",
     issuer: "Udemy",
   },

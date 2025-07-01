@@ -6,7 +6,7 @@ const MailMe: React.FC = () => {
     <div className="w-full">
       {/* Header */}
       <div className="flex flex-col mb-6 gap-2">
-        <h1 className="text-3xl">Contact Me</h1>
+        <h1 className="text-3xl">Contacts</h1>
         <div className="w-full h-[1px] bg-secondary/20"></div>
       </div>
 
@@ -61,7 +61,8 @@ const MailMe: React.FC = () => {
 
       {/* Footer */}
       <div className="text-center mt-8 md:mt-10 text-secondary/60 text-xs md:text-sm">
-        Copyright© 2024 Anish Shukla
+        <div>Made by --</div>
+        <div>Anish Shukla</div>
       </div>
     </div>
   );

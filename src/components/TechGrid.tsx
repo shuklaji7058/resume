@@ -6,7 +6,6 @@ const LangGrid: React.FC = () => {
     {
       name: "Python",
       icon: "python",
-      color: "#F59E0B", // yellow-500
     },
     {
       name: "HTML",
@@ -29,9 +28,12 @@ const LangGrid: React.FC = () => {
       color: "#EF4444", // red-500
     },
     {
-      name: "SQL",
-      icon: "sql",
-      color: "#3B82F6", // blue-500
+      name: "mysql",
+      icon: "mysql",
+    },
+    {
+      name: "postgresql",
+      icon: "postgresql",
     },
     {
       name: "JavaScript",
@@ -42,11 +44,6 @@ const LangGrid: React.FC = () => {
       name: "Node.js",
       icon: "node",
       color: "#10B981", // green-500
-    },
-    {
-      name: "TypeScript",
-      icon: "typescript",
-      color: "#3B82F6", // blue-500
     },
     {
       name: "Tailwind CSS",

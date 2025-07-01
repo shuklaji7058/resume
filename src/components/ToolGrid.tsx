@@ -31,14 +31,16 @@ const TechGrid: React.FC = () => {
     },
 
     {
-      name: "Framer Motion",
-      icon: "framer",
-      color: "#000000", // blue-600
+      name: "cursor",
+      icon: "cursor",
     },
     {
-      name: "Overleaf",
-      icon: "overleaf",
-      color: "#47A141", // blue-600
+      name: "pycharm",
+      icon: "pycharm",
+    },
+    {
+      name: "intellijidea",
+      icon: "intellijidea",
     },
   ];
 
