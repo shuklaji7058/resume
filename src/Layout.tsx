@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import { Outlet } from "react-router-dom";
-import ScrollToTop from "./components/ScrollTop";
 import { Analytics } from "@vercel/analytics/react";
+import React, { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollTop";
 
 interface OutletContextValue {
   theme: string;
@@ -19,6 +19,9 @@ const Root: React.FC = () => {
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
+    // Set theme class on <html>
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(theme);
   }, [theme]);
 
   const context: OutletContextValue = {
@@ -26,14 +29,14 @@ const Root: React.FC = () => {
   };
 
   return (
-    <div className={`${theme}`}>
+    <>
       <Navbar theme={theme} setTheme={setTheme} />
       <ScrollToTop />
-      <div className="pt-10 bg-primary  text-secondary">
+      <div className="pt-10 bg-primary text-secondary min-h-screen">
         <Outlet context={context} />
       </div>
       <Analytics />
-    </div>
+    </>
   );
 };
 
