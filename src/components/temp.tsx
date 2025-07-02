@@ -23,20 +23,13 @@ const Landing: React.FC<{ theme: string }> = ({ theme }) => {
         </h1>{" "}
         <h1 className="text-3xl md:text-6xl z-10">
           I am
-          <span className="text-5xl md:text-7xl font-extrabold">
-            Anish Shukla
+          <span className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            Anish
           </span>
         </h1>
         <div className="flex flex-row flex-wrap gap-4 z-10">
           <TypeAnimation
-            sequence={[
-              "Web Developer",
-              2000,
-              "Frontend Developer",
-              2000,
-              "Python Developer",
-              2000,
-            ]}
+            sequence={["Web Developer", 2000, "Python Developer", 2000]}
             wrapper="span"
             speed={90}
             style={{

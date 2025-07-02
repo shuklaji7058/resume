@@ -24,13 +24,12 @@ const Certificates: React.FC = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-primary pt-12 md:pt-16 px-2 pb-6">
-      <div className="flex flex-col mb-4">
+    <div className="w-full min-h-screen bg-primary flex flex-col justify-center items-center pt-12 md:pt-0 px-2 pb-6">
+      <div className="flex flex-col mb-4 items-center w-full">
         <h1 className="text-2xl md:text-3xl mb-2">Certificates</h1>
         <div className="w-full h-[1px] bg-secondary/20"></div>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-w-5xl w-full">
         {certificates.map((cert, index) => (
           <motion.div
             key={index}
