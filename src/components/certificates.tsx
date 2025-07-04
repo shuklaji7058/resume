@@ -21,6 +21,9 @@ const Certificates: React.FC = () => {
     {
       image: "/certificates/shopify-theme-dev.jpg",
     },
+    {
+      image: "/certificates/udemy-ST.jpg",
+    },
   ];
 
   return (
