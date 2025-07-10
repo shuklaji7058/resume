@@ -52,7 +52,7 @@ const MailMe: React.FC = () => {
               <p className="break-words">
                 Pimpri-Chinchwad, Pune
                 <br />
-                India, 411033
+                India, 411062
               </p>
             </div>
           </div>
