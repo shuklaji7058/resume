@@ -29,7 +29,14 @@ const Landing: React.FC<{ theme: string }> = ({ theme }) => {
         </h1>
         <div className="flex flex-row flex-wrap gap-4 z-10">
           <TypeAnimation
-            sequence={["Web Developer", 2000, "Python Developer", 2000]}
+            sequence={[
+              "Web Developer",
+              2000,
+              "Python Developer",
+              2000,
+              "AI Enthusiast",
+              2000,
+            ]}
             wrapper="span"
             speed={90}
             style={{

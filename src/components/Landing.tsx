@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Icon from "./Icon";
 
 const Landing: React.FC<{ theme: string }> = ({ theme }) => {
-  const roles = ["Web Developer", "FrontEnd Developer", "Python Developer"];
+  const roles = ["Web Developer", "AI Enthusiast", "Python Developer"];
   const q = ["Build", "Ship", "Innovate"];
   const [i, setI] = useState(0);
   const iconfill = theme === "dark" ? "white" : "black";
