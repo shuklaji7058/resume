@@ -16,6 +16,14 @@ const data = {
       tryout: "https://profile-explorer-rho.vercel.app/",
     },
     {
+      name: "Chatbot using Gemini API 🤖",
+      description:
+        "Developed an AI-powered chatbot using the Google Gemini API that generates intelligent responses based on user input. Integrated secure API handling with .env files and implemented real-time streaming in Jupyter Notebook.",
+      github: "https://github.com/shuklaji7058/LLM-GEMINI-Chatbot-",
+      techStack: ["Python", "Jupyter Notebook", "dotenv", "Google Gemini API"],
+      tryout: "",
+    },
+    {
       name: "Microblog",
       description:
         "This Microblog app where we share aur blog's.Build using Python",

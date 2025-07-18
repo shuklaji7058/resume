@@ -9,15 +9,15 @@ const About: React.FC = () => {
       </div>
       <div className="text-secondary/80">
         <p className="text-md leading-relaxed m-0">
-          I am a Computer Science undergraduate with a strong foundation in
-          Python, SQL (MySQL & PostgreSQL), and front-end web development,
-          including HTML, CSS, and JavaScript. I am passionate about software
-          development and eager to contribute to impactful tech projects by
-          writing clean, efficient code. I also have knowledge of Generative AI,
-          which adds to my ability to work on modern, innovative solutions. I am
-          actively seeking an entry-level opportunity in Python development, web
-          development, or any tech role where I can grow, learn, and bring value
-          to the team.{" "}
+          I am a Computer Science graduate with a strong foundation in Python,
+          SQL (MySQL, PostgreSQL), and front-end web development including HTML,
+          CSS, and JavaScript. I also have hands-on experience with Generative
+          AI and large language models using APIs like Google Gemini. I am
+          passionate about software development and eager to contribute to
+          innovative tech projects by writing clean, efficient code. I am
+          actively seeking an entry-level opportunity in Python development,
+          AI/ML, or any tech role where I can grow, learn, and bring value to
+          the team.{" "}
         </p>
       </div>
     </div>

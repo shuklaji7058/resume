@@ -42,6 +42,10 @@ const TechGrid: React.FC = () => {
       name: "intellijidea",
       icon: "intellijidea",
     },
+    {
+      name: "jupyter notebook",
+      icon: "jupyternotebook",
+    },
   ];
 
   return (

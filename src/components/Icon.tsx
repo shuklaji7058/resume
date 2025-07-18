@@ -30,7 +30,8 @@ export type Icons =
   | "tailspin"
   | "cursor"
   | "intellijidea"
-  | "certificate";
+  | "certificate"
+  | "jupyternotebook";
 
 interface IconProps {
   icon: Icons;
