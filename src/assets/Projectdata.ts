@@ -1,6 +1,34 @@
 const data = {
   projects: [
     {
+      name: "AI Dialogue Orchestrator🤖",
+      description:
+        "Built a conversational AI system that handles complex, multi-step user interactions using graph-based workflows. Designed modular and maintainable flows in LangGraph with looping and conditional logic. Integrated LangChain tools, memory, and multiple LLMs (OpenAI & Gemini) for flexible, accurate responses. Showcased abilities in multi-agent orchestration, prompt engineering, and real-time interaction.",
+      github: "https://github.com/shuklaji7058/LangGraph-Module",
+      techStack: [
+        "Python",
+        "Jupyter Notebook",
+        "dotenv",
+        "Google Gemini API",
+        "LangGraph",
+      ],
+      tryout: "",
+    },
+    {
+      name: "Chatbot using Gemini API 🤖",
+      description:
+        "Developed an AI-powered chatbot using the Google Gemini API that generates intelligent responses based on user input. Integrated secure API handling with .env files and implemented real-time streaming in Jupyter Notebook.",
+      github: "https://github.com/shuklaji7058/LLM-GEMINI-Chatbot-",
+      techStack: [
+        "Python",
+        "Jupyter Notebook",
+        "dotenv",
+        "Google Gemini API",
+        "LangChain",
+      ],
+      tryout: "",
+    },
+    {
       name: "Profile-Explorer",
       description:
         "A dynamic web application for managing and viewing professional profiles.Features interactive maps showing profile locations using Leaflet integration",
@@ -14,14 +42,6 @@ const data = {
         " React Router DOM",
       ],
       tryout: "https://profile-explorer-rho.vercel.app/",
-    },
-    {
-      name: "Chatbot using Gemini API 🤖",
-      description:
-        "Developed an AI-powered chatbot using the Google Gemini API that generates intelligent responses based on user input. Integrated secure API handling with .env files and implemented real-time streaming in Jupyter Notebook.",
-      github: "https://github.com/shuklaji7058/LLM-GEMINI-Chatbot-",
-      techStack: ["Python", "Jupyter Notebook", "dotenv", "Google Gemini API"],
-      tryout: "",
     },
     {
       name: "Microblog",
