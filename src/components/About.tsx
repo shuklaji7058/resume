@@ -9,12 +9,13 @@ const About: React.FC = () => {
       </div>
       <div className="text-secondary/80">
         <p className="text-md leading-relaxed m-0">
-          ”Motivated Computer Science graduate with hands-on project experience
-          in Python, SQL, web development, and AI/ML technologies. Self-driven
-          learner with demonstrated ability to master new technologies
-          independently. Seeking to leverage technical foundation and enthusiasm
-          for modern development practices in a challenging technology
-          role.”{" "}
+          Entry-level Data Analyst with strong self-driven experience in Python,
+          SQL, Excel, Power BI, and data visualization. Skilled in collecting,
+          cleaning, analyzing, and presenting data to derive actionable
+          insights. Hands-onexperience building analytical and AI-assisted
+          applications, dashboards, and reporting solutions. Seeking ajunior
+          data analyst role to apply analytical skills in real-world business
+          environments.{" "}
         </p>
       </div>
     </div>

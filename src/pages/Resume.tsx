@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import resumeImage from "../assets/resume.jpg";
+import resumeImage1 from "../assets/resume1.jpg";
+
 import resumePDF from "../assets/resume.pdf";
 
 const Resume: React.FC = () => {
@@ -35,10 +37,24 @@ const Resume: React.FC = () => {
   return (
     <div className="mt-10 md:pt-10 md:mt-6 bg-primary min-h-screen">
       <div className="flex flex-col items-center">
-        <div className="flex justify-center">
+        {/* First Resume Page */}
+        <div className="flex justify-center mb-8">
           <img
             src={resumeImage}
-            alt="Resume"
+            alt="Resume Page 1"
+            style={{
+              width: imageWidth,
+              maxWidth: "100%",
+              height: "auto",
+            }}
+          />
+        </div>
+
+        {/* Second Resume Page */}
+        <div className="flex justify-center mb-8">
+          <img
+            src={resumeImage1}
+            alt="Resume Page 2"
             style={{
               width: imageWidth,
               maxWidth: "100%",

@@ -46,6 +46,16 @@ const TechGrid: React.FC = () => {
       name: "jupyter notebook",
       icon: "jupyternotebook",
     },
+    {
+      name: "Power BI",
+      icon: "powerbi",
+      color: "#F2C811", // yellow-400
+    },
+    {
+      name: "Excel",
+      icon: "excel",
+      color: "#217346", // green-800
+    },
   ];
 
   return (

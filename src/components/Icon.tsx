@@ -31,7 +31,9 @@ export type Icons =
   | "cursor"
   | "intellijidea"
   | "certificate"
-  | "jupyternotebook";
+  | "jupyternotebook"
+  | "powerbi"
+  | "excel";
 
 interface IconProps {
   icon: Icons;

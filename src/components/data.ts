@@ -20,10 +20,6 @@ export const certificates: Certificate[] = [
     image: "/public/certificates/react-redux.png",
     issuer: "Complete Coding",
   },
-  {
-    title: "Shopify-theme Development Certificate",
-    image: "/public/certificates/shopify-theme-dev.jpg",
-    issuer: "Udemy",
-  },
+
   // Add more certificates here
 ];

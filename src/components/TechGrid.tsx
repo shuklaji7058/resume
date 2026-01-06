@@ -17,11 +17,7 @@ const LangGrid: React.FC = () => {
       icon: "css",
       color: "#3B82F6", // blue-500
     },
-    {
-      name: "React",
-      icon: "react",
-      color: "#3B82F6", // blue-500
-    },
+
     {
       name: "Git",
       icon: "git",
